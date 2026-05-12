@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="screen active" id="start_screen">
+            <h1>Quiz Time!</h1>
+            <p>Test your knwolege with these fan quctions</p>
+            <button id="satrt_btn">Start Quiz</button>
+        </div>
+
+
+        <div class="screen" id="quiz_screen">
+            <div class="quiz_header">
+                <h2>Quction goes here</h2>
+                <div class="quzi_info">
+                    <p>Quctions <span id="current_qustions">1</span><span>5</span></p>
+                    <p>Score <span id="Score">0</span></p>
+                </div>
+            </div>
+            <div class="answers_container" id="answers_container">
+                <!-- insert in js  -->
+            </div>
+            <div class="progres_bar">
+                <div class="progres" id="progres">
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="screen" id="result_screen">
+            <h1>Quiz Results</h1>
+            <div class="result_info">
+                <p> you Score <span id="final_score">0</span>out of <span id="max_score">5</span></p>
+            </div>
+            <div id="result_message">Good job!</div>
+            <button id="result_btn">Restart Quiz</button>
+        </div>
+    </div>
+    <script>src="script.js"</script>
 </body>
 </html>
